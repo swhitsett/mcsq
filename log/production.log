@@ -1,2 +1,62 @@
 I, [2015-02-14T11:52:15.316775 #3710]  INFO -- : Migrating to CreateHomes (20150214195032)
 I, [2015-02-14T12:22:53.937614 #4954]  INFO -- : Migrating to CreateProfessors (20150214201220)
+I, [2015-03-01T16:37:36.716697 #29353]  INFO -- : Migrating to CreateHomes (20150214195032)
+I, [2015-03-01T16:37:36.906928 #29353]  INFO -- : Migrating to CreateTestrs (20150301082128)
+I, [2015-03-01T16:37:37.074327 #29353]  INFO -- : Migrating to DeviseCreateUsers (20150301085108)
+I, [2015-03-01T16:47:58.901005 #30368]  INFO -- : Migrating to CreateHomes (20150214195032)
+I, [2015-03-01T16:47:59.093943 #30368]  INFO -- : Migrating to CreateTestrs (20150301082128)
+I, [2015-03-01T16:47:59.261398 #30368]  INFO -- : Migrating to DeviseCreateUsers (20150301085108)
+I, [2015-03-01T16:51:21.915400 #30764]  INFO -- : Started GET "/mcsq" for 192.168.1.1 at 2015-03-01 16:51:21 -0800
+I, [2015-03-01T16:51:21.954082 #30764]  INFO -- : Processing by TestrsController#index as HTML
+I, [2015-03-01T16:51:21.978666 #30764]  INFO -- : Completed 401 Unauthorized in 24ms
+I, [2015-03-01T16:51:22.022333 #30764]  INFO -- : Started GET "/mcsq/users/sign_in" for 192.168.1.1 at 2015-03-01 16:51:22 -0800
+I, [2015-03-01T16:51:22.027374 #30764]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2015-03-01T16:51:22.111237 #30764]  INFO -- :   Rendered devise/shared/_links.html.erb (3.7ms)
+I, [2015-03-01T16:51:22.111552 #30764]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (15.2ms)
+I, [2015-03-01T16:51:22.119667 #30764]  INFO -- : Completed 200 OK in 92ms (Views: 37.3ms | ActiveRecord: 2.3ms)
+I, [2015-03-01T16:51:23.011009 #30764]  INFO -- : Started GET "/mcsq/images/favicon.ico" for 192.168.1.1 at 2015-03-01 16:51:23 -0800
+F, [2015-03-01T16:51:23.017564 #30764] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  passenger (4.0.58) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.58) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.58) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.58) lib/phusion_passenger/request_handler.rb:455:in `block (3 levels) in start_threads'
+
+
+I, [2015-03-01T16:51:38.422468 #30764]  INFO -- : Started GET "/mcsq/users/sign_up" for 192.168.1.1 at 2015-03-01 16:51:38 -0800
+I, [2015-03-01T16:51:38.431618 #30764]  INFO -- : Processing by Devise::RegistrationsController#new as HTML
+I, [2015-03-01T16:51:38.456938 #30764]  INFO -- :   Rendered devise/shared/_links.html.erb (0.9ms)
+I, [2015-03-01T16:51:38.457211 #30764]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (10.9ms)
+I, [2015-03-01T16:51:38.461070 #30764]  INFO -- : Completed 200 OK in 29ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-01T16:51:51.468978 #30764]  INFO -- : Started POST "/mcsq/users" for 192.168.1.1 at 2015-03-01 16:51:51 -0800
+I, [2015-03-01T16:51:51.474658 #30764]  INFO -- : Processing by Devise::RegistrationsController#create as HTML
+I, [2015-03-01T16:51:51.475170 #30764]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z9vHi/2ENuRBfVQ4fNTBzx4m7Ha7QRscAsqCdBtnZQM=", "user"=>{"email"=>"asdf@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+E, [2015-03-01T16:51:51.600842 #30764] ERROR -- : Binary data inserted for `string` type on column `encrypted_password`
+E, [2015-03-01T16:51:51.785522 #30764] ERROR -- : Binary data inserted for `string` type on column `current_sign_in_ip`
+E, [2015-03-01T16:51:51.785748 #30764] ERROR -- : Binary data inserted for `string` type on column `last_sign_in_ip`
+I, [2015-03-01T16:51:51.978103 #30764]  INFO -- : Redirected to http://98.244.18.147/mcsq/
+I, [2015-03-01T16:51:51.978510 #30764]  INFO -- : Completed 302 Found in 503ms (ActiveRecord: 354.5ms)
+I, [2015-03-01T16:51:51.996414 #30764]  INFO -- : Started GET "/mcsq/" for 192.168.1.1 at 2015-03-01 16:51:51 -0800
+I, [2015-03-01T16:51:51.999878 #30764]  INFO -- : Processing by TestrsController#index as HTML
+I, [2015-03-01T16:51:52.024569 #30764]  INFO -- :   Rendered testrs/index.html.erb within layouts/application (5.1ms)
+I, [2015-03-01T16:51:52.028033 #30764]  INFO -- : Completed 200 OK in 28ms (Views: 16.7ms | ActiveRecord: 1.3ms)
+I, [2015-03-01T16:52:01.390548 #30764]  INFO -- : Started GET "/mcsq/testrs/new" for 192.168.1.1 at 2015-03-01 16:52:01 -0800
+I, [2015-03-01T16:52:01.396703 #30764]  INFO -- : Processing by TestrsController#new as HTML
+I, [2015-03-01T16:52:01.431529 #30764]  INFO -- :   Rendered testrs/_form.html.erb (13.9ms)
+I, [2015-03-01T16:52:01.432105 #30764]  INFO -- :   Rendered testrs/new.html.erb within layouts/application (19.2ms)
+I, [2015-03-01T16:52:01.435552 #30764]  INFO -- : Completed 200 OK in 38ms (Views: 26.8ms | ActiveRecord: 2.2ms)
