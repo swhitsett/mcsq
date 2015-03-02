@@ -60,3 +60,42 @@ I, [2015-03-01T16:52:01.396703 #30764]  INFO -- : Processing by TestrsController
 I, [2015-03-01T16:52:01.431529 #30764]  INFO -- :   Rendered testrs/_form.html.erb (13.9ms)
 I, [2015-03-01T16:52:01.432105 #30764]  INFO -- :   Rendered testrs/new.html.erb within layouts/application (19.2ms)
 I, [2015-03-01T16:52:01.435552 #30764]  INFO -- : Completed 200 OK in 38ms (Views: 26.8ms | ActiveRecord: 2.2ms)
+I, [2015-03-01T17:04:53.085547 #30764]  INFO -- : Started GET "/mcsq/users/sign_up" for 192.168.1.1 at 2015-03-01 17:04:53 -0800
+I, [2015-03-01T17:04:53.090104 #30764]  INFO -- : Processing by Devise::RegistrationsController#new as HTML
+I, [2015-03-01T17:04:53.099114 #30764]  INFO -- : Redirected to http://98.244.18.147/mcsq/
+I, [2015-03-01T17:04:53.099725 #30764]  INFO -- : Filter chain halted as :require_no_authentication rendered or redirected
+I, [2015-03-01T17:04:53.100230 #30764]  INFO -- : Completed 302 Found in 10ms (ActiveRecord: 0.9ms)
+I, [2015-03-01T17:04:53.117601 #30764]  INFO -- : Started GET "/mcsq/" for 192.168.1.1 at 2015-03-01 17:04:53 -0800
+I, [2015-03-01T17:04:53.121475 #30764]  INFO -- : Processing by TestrsController#index as HTML
+I, [2015-03-01T17:04:53.133506 #30764]  INFO -- :   Rendered testrs/index.html.erb within layouts/application (2.9ms)
+I, [2015-03-01T17:04:53.141106 #30764]  INFO -- : Completed 200 OK in 19ms (Views: 11.3ms | ActiveRecord: 1.5ms)
+I, [2015-03-01T17:04:57.487926 #30764]  INFO -- : Started GET "/mcsq/" for 192.168.1.1 at 2015-03-01 17:04:57 -0800
+I, [2015-03-01T17:04:57.491490 #30764]  INFO -- : Processing by TestrsController#index as HTML
+I, [2015-03-01T17:04:57.503284 #30764]  INFO -- :   Rendered testrs/index.html.erb within layouts/application (2.7ms)
+I, [2015-03-01T17:04:57.510473 #30764]  INFO -- : Completed 200 OK in 19ms (Views: 10.6ms | ActiveRecord: 1.5ms)
+I, [2015-03-01T17:04:58.792096 #30764]  INFO -- : Started GET "/mcsq/" for 192.168.1.1 at 2015-03-01 17:04:58 -0800
+I, [2015-03-01T17:04:58.795618 #30764]  INFO -- : Processing by TestrsController#index as HTML
+I, [2015-03-01T17:04:58.807169 #30764]  INFO -- :   Rendered testrs/index.html.erb within layouts/application (2.6ms)
+I, [2015-03-01T17:04:58.814081 #30764]  INFO -- : Completed 200 OK in 18ms (Views: 10.4ms | ActiveRecord: 1.5ms)
+I, [2015-03-01T17:05:17.942337 #31627]  INFO -- : Started GET "/mcsq/" for 192.168.1.1 at 2015-03-01 17:05:17 -0800
+I, [2015-03-01T17:05:17.981708 #31627]  INFO -- : Processing by TestrsController#index as HTML
+I, [2015-03-01T17:05:18.044037 #31627]  INFO -- :   Rendered testrs/index.html.erb within layouts/application (4.3ms)
+I, [2015-03-01T17:05:18.051497 #31627]  INFO -- : Completed 200 OK in 69ms (Views: 17.2ms | ActiveRecord: 2.4ms)
+I, [2015-03-01T17:05:26.681008 #31627]  INFO -- : Started DELETE "/mcsq/users/sign_out" for 192.168.1.1 at 2015-03-01 17:05:26 -0800
+I, [2015-03-01T17:05:26.684966 #31627]  INFO -- : Processing by Devise::SessionsController#destroy as HTML
+I, [2015-03-01T17:05:26.685150 #31627]  INFO -- :   Parameters: {"authenticity_token"=>"Z9vHi/2ENuRBfVQ4fNTBzx4m7Ha7QRscAsqCdBtnZQM="}
+I, [2015-03-01T17:05:26.740820 #31627]  INFO -- : Redirected to http://98.244.18.147/mcsq/
+I, [2015-03-01T17:05:26.741306 #31627]  INFO -- : Completed 302 Found in 56ms (ActiveRecord: 0.8ms)
+I, [2015-03-01T17:05:26.750957 #31627]  INFO -- : Started GET "/mcsq/" for 192.168.1.1 at 2015-03-01 17:05:26 -0800
+I, [2015-03-01T17:05:26.753558 #31627]  INFO -- : Processing by TestrsController#index as HTML
+I, [2015-03-01T17:05:26.765434 #31627]  INFO -- : Completed 401 Unauthorized in 12ms
+I, [2015-03-01T17:05:26.779702 #31627]  INFO -- : Started GET "/mcsq/users/sign_in" for 192.168.1.1 at 2015-03-01 17:05:26 -0800
+I, [2015-03-01T17:05:26.782632 #31627]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2015-03-01T17:05:26.809453 #31627]  INFO -- :   Rendered devise/shared/_links.html.erb (3.0ms)
+I, [2015-03-01T17:05:26.809738 #31627]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (14.0ms)
+I, [2015-03-01T17:05:26.813959 #31627]  INFO -- : Completed 200 OK in 31ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+I, [2015-03-01T17:05:30.593013 #31627]  INFO -- : Started GET "/mcsq/users/sign_in" for 192.168.1.1 at 2015-03-01 17:05:30 -0800
+I, [2015-03-01T17:05:30.597450 #31627]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2015-03-01T17:05:30.619732 #31627]  INFO -- :   Rendered devise/shared/_links.html.erb (2.0ms)
+I, [2015-03-01T17:05:30.620323 #31627]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (15.3ms)
+I, [2015-03-01T17:05:30.628460 #31627]  INFO -- : Completed 200 OK in 30ms (Views: 25.0ms | ActiveRecord: 0.0ms)
