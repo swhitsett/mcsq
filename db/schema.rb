@@ -11,17 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150301085108) do
+ActiveRecord::Schema.define(version: 20150319060427) do
 
-  create_table "homes", force: true do |t|
-    t.string   "test"
+  create_table "events", force: true do |t|
+    t.string   "e_name"
+    t.string   "team_1"
+    t.string   "team_2"
+    t.float    "team_1_odds"
+    t.float    "team_2_odds"
+    t.integer  "final_score"
+    t.string   "game_end_time"
+    t.float    "total_pot"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "testrs", force: true do |t|
-    t.string   "name"
-    t.string   "burp"
+  create_table "homes", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_bets", force: true do |t|
+    t.float    "wager"
+    t.string   "game_id"
+    t.string   "team_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -29,6 +42,9 @@ ActiveRecord::Schema.define(version: 20150301085108) do
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
+    t.string   "f_name"
+    t.string   "l_name"
+    t.string   "user_name"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

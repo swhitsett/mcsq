@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>E name:</strong>
+  <%= @event.e_name %>
+</p>
+
+<p>
+  <strong>Team 1:</strong>
+  <%= @event.team_1 %>
+</p>
+
+<p>
+  <strong>Team 2:</strong>
+  <%= @event.team_2 %>
+</p>
+
+<p>
+  <strong>Team 1 odds:</strong>
+  <%= @event.team_1_odds %>
+</p>
+
+<p>
+  <strong>Team 2 odds:</strong>
+  <%= @event.team_2_odds %>
+</p>
+
+<p>
+  <strong>Final score:</strong>
+  <%= @event.final_score %>
+</p>
+
+<p>
+  <strong>Game end time:</strong>
+  <%= @event.game_end_time %>
+</p>
+
+<p>
+  <strong>Total pot:</strong>
+  <%= @event.total_pot %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

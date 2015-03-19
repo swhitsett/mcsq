@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+  resources :homes
+
+  resources :user_bets
+
+  resources :events
+
   devise_for :users
-  resources :testrs
-  root 'testrs#index'
+
+  root 'homes#index'
 end

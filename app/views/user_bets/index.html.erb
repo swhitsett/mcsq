@@ -1,0 +1,29 @@
+<h1>Listing user_bets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Wager</th>
+      <th>Game</th>
+      <th>Team name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_bets.each do |user_bet| %>
+      <tr>
+        <td><%= user_bet.wager %></td>
+        <td><%= user_bet.game_id %></td>
+        <td><%= user_bet.team_name %></td>
+        <td><%= link_to 'Show', user_bet %></td>
+        <td><%= link_to 'Edit', edit_user_bet_path(user_bet) %></td>
+        <td><%= link_to 'Destroy', user_bet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User bet', new_user_bet_path %>

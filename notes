@@ -1,0 +1,35 @@
+      invoke  active_record
+      create    db/migrate/20150319060427_create_homes.rb
+      create    app/models/home.rb
+      invoke    test_unit
+   identical      test/models/home_test.rb
+    conflict      test/fixtures/homes.yml
+    Overwrite /home/donpancho/gitfiles/mcsq/test/fixtures/homes.yml? (enter "h" for help) [Ynaqdh] Y
+       force      test/fixtures/homes.yml
+      invoke  resource_route
+       route    resources :homes
+      invoke  responders_controller
+      create    app/controllers/homes_controller.rb
+      invoke    erb
+      create      app/views/homes
+      create      app/views/homes/index.html.erb
+      create      app/views/homes/edit.html.erb
+      create      app/views/homes/show.html.erb
+      create      app/views/homes/new.html.erb
+      create      app/views/homes/_form.html.erb
+      invoke    test_unit
+      create      test/controllers/homes_controller_test.rb
+      invoke    helper
+      create      app/helpers/homes_helper.rb
+      invoke      test_unit
+      create        test/helpers/homes_helper_test.rb
+      invoke    jbuilder
+      create      app/views/homes/index.json.jbuilder
+      create      app/views/homes/show.json.jbuilder
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/homes.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/homes.css.scss
+      invoke  scss
+   identical    app/assets/stylesheets/scaffolds.css.scss

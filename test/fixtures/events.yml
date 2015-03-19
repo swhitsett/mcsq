@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  e_name: MyString
+  team_1: MyString
+  team_2: MyString
+  team_1_odds: 1.5
+  team_2_odds: 1.5
+  final_score: 1
+  game_end_time: MyString
+  total_pot: 1.5
+
+two:
+  e_name: MyString
+  team_1: MyString
+  team_2: MyString
+  team_1_odds: 1.5
+  team_2_odds: 1.5
+  final_score: 1
+  game_end_time: MyString
+  total_pot: 1.5
