@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :images
+
   resources :homes
 
   resources :user_bets

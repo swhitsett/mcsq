@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "FmWagers" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "WXCbooks" %></title>
     <%= csrf_meta_tags %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -45,12 +45,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Mcsq</a>
+        <a class="navbar-brand" href="#">WXCbooks</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Sports", "/path1"  %></li>
-            <li><%= link_to "Top Bets", "/path2"  %></li>
-            <li><%= link_to "My Accont", "/path3"  %></li>
+            <li><%= link_to "Sports", "#"  %></li>
+            <li><%= link_to "Top Bets", "#"  %></li>
+            <li><%= link_to "My Accont", "#"  %></li>
           </ul>
         </div>
       </div>
@@ -58,7 +58,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-12">
           <%= bootstrap_flash %>
           <%= yield %>
 	  	<p class="notice"><%= notice %></p>
@@ -68,12 +68,12 @@
 		Signed in as <%= current_user.email %>. Not you?
 		<%= link_to "Sign out", destroy_user_session_path, method: :delete %>
 		<% else %>
-		<%= link_to "Sign up", new_user_registration_path %> or
-		<%= link_to "Sign in", new_user_session_path %>
+		 <!--link_to "Sign up", new_user_registration_path
+		 link_to "Sign in", new_user_session_path--> 
 <% end %>
 </div>
         </div>
-        <div class="col-lg-3">
+        <!-- <div class="col-lg-3">
           <div class="well sidebar-nav">
             <h3>Sidebar</h3>
             <ul class="nav nav-list">
@@ -82,12 +82,12 @@
               <li><%= link_to "Link2", "/path2"  %></li>
               <li><%= link_to "Link3", "/path3"  %></li>
             </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-      </div><!--/row-->
+          </div>
+        </div> -->
+      </div>
 
       <footer>
-        <p>&copy; MCSQ 2015</p>
+        <p>&copy; WXCbooks 2015</p>
       </footer>
 
     </div> <!-- /container -->
