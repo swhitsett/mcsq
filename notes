@@ -33,3 +33,9 @@
       create      app/assets/stylesheets/homes.css.scss
       invoke  scss
    identical    app/assets/stylesheets/scaffolds.css.scss
+
+RAILS_ENV=production bundle exec rake assets:precompile
+
+error with images not showing up after the above is ran
+http://stackoverflow.com/questions/9708618/why-wont-rails-find-my-assets
+found in /config/enviroments/production.rb
