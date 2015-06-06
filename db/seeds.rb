@@ -12,3 +12,9 @@ images = Image.create(
     { name: 'derby1.jpg'}
   ]
 )
+
+users = User.create(
+  [
+    {f_name:'a', l_name: 'a', email: 'a@a.com', password: 'aaaaaaaa', password_confirmation: 'a'}
+  ]
+)
