@@ -71,6 +71,7 @@ GEM
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
+    paint (1.0.0)
     rack (1.5.2)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -95,6 +96,8 @@ GEM
     ref (1.0.5)
     responders (1.1.1)
       railties (>= 3.2, < 4.2)
+    restclient (0.11.2)
+      paint (~> 1.0)
     sass (3.2.19)
     sass-rails (4.0.5)
       railties (>= 4.0.0, < 5.0)
@@ -147,6 +150,7 @@ DEPENDENCIES
   less-rails
   nokogiri
   rails (= 4.1.8)
+  restclient
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring

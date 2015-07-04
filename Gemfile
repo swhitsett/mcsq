@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'restclient'
 gem 'nokogiri'
 gem 'devise'
 gem "therubyracer"

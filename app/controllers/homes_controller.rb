@@ -1,8 +1,16 @@
 class HomesController < ApplicationController
   before_action :set_home, only: [:show, :edit, :update, :destroy]
+  # require 'rubygems'
+  require 'nokogiri'
+  require 'open-uri'
+  # require 'restclient'
 
   def index
     @homes = Home.all
+    @MLBteams = Nokogiri::HTML(open("https://www.sportsbook.ag/sbk/sportsbook4/home.sbk")).css("div[class='team-title']")
+    @thiss = "hilo"
+    #@MLBteams.css("div[class='team-title']").size
+    # @MLBteams.css("div[class='team-title']")[0].text
 #    respond_with(@homes)
   end
 
