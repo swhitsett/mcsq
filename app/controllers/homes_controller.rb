@@ -7,8 +7,9 @@ class HomesController < ApplicationController
 
   def index
     @homes = Home.all
-    @MLBteams = Nokogiri::HTML(open("https://www.sportsbook.ag/sbk/sportsbook4/home.sbk")).css("div[class='team-title']")
-    @thiss = "hilo"
+    @MLBteams = Nokogiri::HTML(open("https://www.sportsbook.ag/sbk/sportsbook4/mlb-betting/mlb-game-lines.sbk")).css("span[class='team-title']")
+    @MLBmoney = Nokogiri::HTML(open("https://www.sportsbook.ag/sbk/sportsbook4/mlb-betting/mlb-game-lines.sbk")).css("div[class='market']")
+    @GamesNumber = @MLBteams.size / 2
     #@MLBteams.css("div[class='team-title']").size
     # @MLBteams.css("div[class='team-title']")[0].text
 #    respond_with(@homes)

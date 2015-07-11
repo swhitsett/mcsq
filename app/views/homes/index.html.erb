@@ -7,14 +7,39 @@
     </tr>
   </thead>
 
-  <tbody>
-    <% @MLBteams.each do |team| %>
-      <tr>
-        <td><%= team.text %></td>
-        
-      </tr>
-    <% end %>
-  </tbody>
+  <div class="row">
+    <div class="col-md-12">
+      <% @count = 0 %>
+      <% @betCounter = 2 %>
+      <% @MLBteams.each do |team| %>
+        <div class ="row">
+          <div class="col-md-2">
+
+            <%= team.text %>
+            <% if @count == 0 %>
+            <br>
+              vs.
+              <% @count += 1 %>
+            <%elsif @count == 1 %>
+              <br>
+              <% @count = 0 %>
+            <% end %>
+            <br>
+          </div>
+          <div class="col-md-2">
+            <button type="button" class="btn btn-primary btn-block"><%= @MLBmoney[@betCounter].text %></button>
+          </div>
+          <div class="col-md-2">
+            <button type="button" class="btn btn-primary btn-block"><%= @MLBmoney[@betCounter-1].text %></button>
+          </div>
+          <div class="col-md-2">
+            <button type="button" class="btn btn-primary btn-block"><%= @MLBmoney[@betCounter-2].text %></button>
+          </div>
+        </div>
+        <% @betCounter += 3 %>
+      <% end %>
+      </div>
+    </div>
 </table>
 
 <br>
