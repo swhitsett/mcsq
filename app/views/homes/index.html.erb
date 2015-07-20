@@ -1,5 +1,7 @@
 <h1>Listing homes</h1>
+<style>
 
+</style>
 <table>
   <thead>
     <tr>
@@ -13,15 +15,14 @@
       <% @betCounter = 2 %>
       <% @MLBteams.each do |team| %>
         <div class ="row">
-          <div class="col-md-2">
-
-            <%= team.text %>
+          <div class="col-md-3">
+            <b style="font-size:130%"><%= team.text %></b>
             <% if @count == 0 %>
             <br>
               vs.
               <% @count += 1 %>
             <%elsif @count == 1 %>
-              <br>
+              <br><br>
               <% @count = 0 %>
             <% end %>
             <br>
